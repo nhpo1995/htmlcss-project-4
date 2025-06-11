@@ -297,7 +297,7 @@ button {
 
 .hero-cta__btn:hover {
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
-    transform: translateX(2px) translateY(-2px);
+    transform: translateX(-2px) translateY(-2px);
 }
 
 .hero-cta__btn:active {
@@ -919,4 +919,181 @@ button {
     font-weight: 500;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
     transition: transform 0.25s ease-in, color 0.25s, background-color 0.25s;
+}
+
+/*========================== pricing ====================*/
+.pricing {
+    padding: 86px 0;
+    background-color: #fff6ed;
+}
+
+.pricing__inner {
+    padding: 0 88px;
+}
+
+.pricing__heading,
+.pricing__desc {
+    text-align: center;
+}
+
+.pricing__desc {
+    width: 710px;
+    margin: 24px auto 0;
+}
+
+.cta-btn__value {
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing-switch__wrap {
+    margin-top: 38px;
+}
+
+.pricing-switch__label {
+    position: relative;
+    width: 276px;
+    height: 56px;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.pricing-switch__label::before {
+    --width: 145px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: var(--width);
+    border-radius: 31px;
+    background: #ff5b2e;
+    z-index: -1;
+    transition: left 0.35s ease, right 0.35s ease, transform 0.25s ease;
+}
+
+.pricing-switch__input:checked + .pricing-switch__label::before {
+    transform: translateX(var(--width));
+    width: 130px;
+}
+
+.pricing-switch__input:checked + .pricing-switch__label :nth-child(2) {
+    color: #fff;
+}
+
+.pricing-switch__input:not(:checked) + .pricing-switch__label :nth-child(1) {
+    color: #fff;
+}
+
+.pricing-switch__input:not(:checked) + .pricing-switch__label::before {
+    transform: translateX(0%);
+    --width: 145px;
+}
+
+.pricing-switch__value {
+    padding: 0 40px;
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.pricing-card__item {
+    /* height: 465px; */
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px 28px 43px;
+}
+
+.pricing-card__item--active {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-card__tag {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-card__date {
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 8px;
+}
+
+.pricing-card__price {
+    color: #000958;
+    font-family: "Sora", sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+    margin-top: 24px;
+}
+
+.pricing__btn {
+    display: block;
+    width: 246px;
+    height: 44px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 44px;
+    margin: 22px auto 0;
+    transition: transform 0.25s ease;
+}
+
+.pricing__btn--active {
+    border-radius: 39px;
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.pricing__btn:hover {
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    transform: translateX(-2px) translateY(-2px);
+}
+
+.pricing__btn:active {
+    transform: scale(0.98);
+}
+
+.pricing-perk__list {
+    margin-top: 24px;
+}
+
+.pricing-perk__item {
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pricing-perk__item::before {
+    content: url(../img/Check.-orange.svg);
 }
