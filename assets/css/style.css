@@ -774,6 +774,7 @@ button {
     transition: transform 0.25s ease-in, color 0.25s, background-color 0.25s;
 }
 
+.blog__btn:hover,
 .service__cta-btn:hover,
 .staff__btn:hover {
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
@@ -782,6 +783,7 @@ button {
     transform: translateY(-2px);
 }
 
+.blog__btn:active,
 .service__cta-btn:active,
 .staff__btn:active {
     transform: scale(0.95);
@@ -1227,4 +1229,93 @@ button {
 .review__nav-item--active {
     width: 24px;
     background: #ff5b2e;
+}
+
+/*========================== blog ====================*/
+.blog {
+    padding: 77px 0 131px;
+}
+
+.blog__header {
+    display: flex;
+    align-items: center;
+    column-gap: 512px;
+}
+
+.blog__heading {
+    flex-shrink: 0;
+}
+
+.blog__desc {
+    width: 350px;
+}
+
+.blog__btn {
+    --height: 56px;
+    --width: 182px;
+    --color: #ff5b2e;
+    --border-color: rgba(255, 91, 46, 0.6);
+    --border-radius: 31px;
+    margin-top: 24px;
+    transition: transform 0.25s ease-in, color 0.25s, background-color 0.25s;
+}
+
+.blog__cards {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-card__media {
+    padding: 24px 0 0 36px;
+    height: 362px;
+    border-radius: 24px;
+}
+
+.blog-card__item:first-child .blog-card__media {
+    background: #90ccff;
+}
+
+.blog-card__item:nth-child(2) .blog-card__media {
+    background: #ff997e;
+}
+
+.blog-card__item:last-child .blog-card__media {
+    background: #5bd6e2;
+}
+
+.blog-card__img {
+    display: block;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.blog-card__img-tag {
+    color: #fff;
+    font-family: "Sora", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.blog-card__body {
+    padding: 28px 0;
+}
+
+.blog-card__heading {
+    width: 338px;
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54;
+}
+
+.blog-card__desc {
+    width: 358px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+    margin-top: 16px;
 }
