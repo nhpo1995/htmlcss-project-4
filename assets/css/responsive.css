@@ -68,6 +68,35 @@
     .mobile-checkbox:checked ~ .mobile-navbar {
         transform: translateX(0);
     }
+
+    .hero__inner {
+        gap: 77px;
+    }
+
+    .hero__media {
+        padding-bottom: 0;
+    }
+
+    .hero__img-wrap {
+        width: 290px;
+        height: 380px;
+    }
+
+    .hero__decor,
+    .hero__img-wrap--small,
+    .hero__list {
+        display: none;
+    }
+
+    .hero__heading {
+        font-size: 4.8rem;
+    }
+
+    .section__desc {
+        font-size: 1.6rem;
+        width: 350px;
+        text-align: justify;
+    }
 }
 
 /* Table */
@@ -98,6 +127,17 @@
 
     .mobile__separate {
         border-top: 1px solid var(--primary-color);
+    }
+
+    .hero__heading {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
+    .section__desc {
+        text-align: center;
+        font-size: 1.4rem;
+        width: 350px;
     }
 }
 
