@@ -355,7 +355,7 @@ button {
 
 .about__heading,
 .about__desc {
-    width: 444px;
+    max-width: 444px;
 }
 
 .about__heading {
@@ -878,7 +878,6 @@ button {
     display: block;
     content: url(../img/staff/icon-1.svg);
     position: absolute;
-
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1270,7 +1269,6 @@ button {
 
 .blog-card__media {
     padding: 24px 0 0 36px;
-    height: 362px;
     border-radius: 24px;
 }
 
@@ -1301,11 +1299,11 @@ button {
 }
 
 .blog-card__body {
-    padding: 28px 0;
+    padding: 28px 14px 0 0;
 }
 
 .blog-card__heading {
-    width: 338px;
+    max-width: 338px;
     color: #000958;
     font-size: 2.2rem;
     font-weight: 600;
@@ -1313,7 +1311,7 @@ button {
 }
 
 .blog-card__desc {
-    width: 358px;
+    max-width: 358px;
     color: #656689;
     font-size: 1.4rem;
     font-weight: 400;
