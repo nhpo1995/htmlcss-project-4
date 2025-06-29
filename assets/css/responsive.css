@@ -132,7 +132,6 @@
     .service__body {
         display: grid;
         grid-template-columns: auto auto;
-        column-gap: 71px;
         justify-content: center;
     }
 
@@ -259,6 +258,7 @@
         border-top: 1px solid var(--primary-color);
     }
 
+    .section__heading,
     .hero__heading {
         text-align: center;
         font-size: 4.5rem;
@@ -268,6 +268,78 @@
         text-align: center;
         font-size: 1.4rem;
         width: 350px;
+    }
+
+    .about-list {
+        margin-top: 54px;
+        grid-template-columns: auto;
+        justify-content: center;
+        column-gap: 0;
+        row-gap: 34px;
+    }
+
+    .tab__title {
+        font-size: 1.6rem;
+    }
+
+    .tab__item {
+        padding: 10px 10px;
+        gap: 8px;
+    }
+
+    .tab__title {
+        font-size: 1.4rem;
+    }
+
+    .service__body {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+
+    .staff__list {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing__list {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing__inner {
+        padding: 0;
+    }
+
+    .review-item {
+        text-align: center;
+    }
+
+    .review-item__author {
+        justify-content: center;
+    }
+
+    .blog__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        background-color: #fff6ed;
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+
+    .footer__contact {
+        width: 100%;
+    }
+
+    .footer__group {
+        padding: 52px 0px 52px 0px;
+    }
+
+    .footer__copy-right {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
